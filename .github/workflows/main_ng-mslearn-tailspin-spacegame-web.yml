@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'ng-mslearn-tailspin-spacegame-web'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_43B4CEC1E19946D495F11F8D7B46E1D5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A4705E3AB404673BD564ED871ECCA8E }}
           package: .
