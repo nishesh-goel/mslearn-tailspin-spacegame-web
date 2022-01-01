@@ -57,3 +57,9 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
+ - task: AzureWebApp@1
+  inputs:
+    azureSubscription: '/subscriptions/58692cb1-b5dc-4140-b89f-84f779a016af/resourcegroups/NG/providers/Microsoft.Web/serverFarms/psappsvcplan'
+    appName: 'Tailspin.SpaceGame.Web'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
